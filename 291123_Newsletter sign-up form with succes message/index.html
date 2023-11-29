@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main>
+    <section class="form">
+      <div class="left">
+        <h2>Stay updated!</h2>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <label for="emailField" id="lbl">Email Adress</label>
+        <input type="email" name="emailField" id="emailField" placeholder="email@company.com">
+        <button class="submit">Subscribe to monthly newsletter</button>
+      </div>
+      <div class="right">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+      </div>
+    </section>
+    <section class="succes-message hidden">
+      <img src="./assets/images/icon-list.svg" alt="">
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to <span id="userEmail">ash@loremcompany.com.</span> 
+        Please open it and click the button inside to confirm your subscription.</p>
+        <button class="dismissMsg">Dismiss message</button>
+      </section>
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
