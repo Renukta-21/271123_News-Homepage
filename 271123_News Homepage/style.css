@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter-Variable';
+}
+@font-face{
+    font-family: 'Inter-Variable';
+    src: url(news-homepage-main/assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+    font-weight: normal;
+}
+@font-face{
+    font-weight: 700;
+    src: url(news-homepage-main/assets/fonts/static/Inter-Bold.ttf);
+    font-family: 'Inter-Variable';
+}
+@font-face{
+    font-weight: 800;
+    src: url(news-homepage-main/assets/fonts/static/Inter-ExtraBold.ttf);
+    font-family: 'Inter-Variable';
+}
+.main-container{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: rgb(254, 253, 249);
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px 40px 0px;
+}
+nav a{
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    margin: 0 0 0 25px;
+}
+nav a:hover{
+    color: hsl(5, 85%, 63%);
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "image image rightCard"
+    "title rightTitle rightCard"
+    "bottom-card1 bottom-card2 bottom-card3"
+    "footer footer footer";
+    gap: 2rem;
+}
+.right-title{
+    grid-area: rightTitle;
+    display: flex;
+    flex-direction: column;
+}
+.right-title p{
+    line-height: 1.6rem;
+}
+.right-title button{
+    margin-top: auto;
+    background-color: rgb(0, 0, 26);
+    color: #fff;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-right: auto;
+    cursor: pointer;
+    border: 0;
+    margin-top: 20px;
+    background-color: hsl(5, 64%, 49%);
+}
+.bottom-card1{
+    grid-area: bottom-card1;
+}
+.bottom-card2{
+    grid-area: bottom-card2;
+}
+.bottom-card3{
+    grid-area: bottom-card3;
+}
+.title{
+    grid-area: title;
+    font-size: 3rem;
+    color: rgb(2, 0, 26);
+}
+.title h3{
+    font-weight: 800;
+}
+.image{
+    grid-area: image;
+}
+.image img{
+    width: 100%;
+}
+.right-card{
+    grid-area: rightCard;
+    background-color: rgb(0, 0, 26);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-card h3{
+    font-size: 3rem;
+}
+.right-card p{
+    color: #969696;
+}
+.right-card .sec h4{
+    font-size: 1.3rem;
+    margin: 15px 0px;
+}
+.right-card .sec h4{
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.right-card .sec h4:hover{
+    color: hsl(35, 77%, 62%);
+}
+
+.right-card .sec{
+    color: #fff;
+}
+hr{
+    border: 0;
+    border-bottom: 1px solid rgb(85, 85, 85);
+}
+.right-card h3{
+    color: rgb(237, 171, 83);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.attribution{
+    grid-area: footer;
+}
+.bottom-card1,.bottom-card2,.bottom-card3{
+    display: flex;
+    width: 100%;
+}
+.bottom-card1 .left,.bottom-card2 .left,.bottom-card3 .left{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bottom-card1 .left{
+    background-image: url(news-homepage-main/assets/images/image-retro-pcs.jpg);
+}
+.bottom-card2 .left{
+    background-image: url(news-homepage-main/assets/images/image-top-laptops.jpg);
+}
+.bottom-card3 .left{
+    background-image: url(news-homepage-main/assets/images/image-gaming-growth.jpg);
+}
+.botCard .left{
+    width: 100px;
+    height: 130px;
+    margin-right: 20px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.botCard .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.botCard h2{
+    font-size: 1.8rem;
+    color: #969696;
+}
+.botCard h3{
+    color: rgb(0, 0, 26);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.botCard h3:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.botCard p{
+    line-height: 1.6;
+}
+
+.menu.hidden, .overlay.hidden{
+    display: none;
+}
+.menu{
+    display: block;
+    position: fixed;
+    right: 0;
+    z-index: 3;
+    background-color: rgb(254, 253, 249);
+    width: 70%;
+    height: 100%;
+    padding: 10rem 2rem;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    margin: 15px 0px;
+    font-size: 1.3rem;
+}
+.menu .cross{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 3rem;
+    cursor: pointer;
+    
+}
+.overlay{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 2;
+}
+
+/* Estilos generales que se aplican a todas las pantallas */
+/* ... */
+
+/* Consulta de medios para pantallas con un ancho máximo de 650px */
+@media screen and (max-width: 650px) {
+    main{
+        padding: 0px 10px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "image"
+        "title"
+        "rightTitle"
+        "rightCard"
+        "bottom-card1"
+        "bottom-card2"
+        "bottom-card3"
+        "footer";
+    }
+    .right-card{
+        height: 600px;
+    }
+    .title h3{
+        font-size: 3rem;
+    }
+    nav{
+        padding: 15px 10px;
+    }
+    nav a{
+        display: none;
+    }
+    nav .right{
+        width: 40px;
+        height: 25px;
+    }
+    nav .right::before{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 25px;
+        background-image: url(news-homepage-main/assets/images/icon-menu.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .image{
+        background-image: url(news-homepage-main/assets/images/image-web-3-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+    .image img{
+        display: none;
+    }
+    .botCard{
+        height: 150px;
+    }
+    .botCard .left{
+        flex-shrink: 0;
+        height: 100%;
+    }
+  
+  }
+  
