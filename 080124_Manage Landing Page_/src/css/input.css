@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .wrapper{
+        @apply w-[90%] mx-auto max-w-screen-xl;
+    }
+    .button{
+        @apply py-3 px-10 bg-Bright-Red rounded-full text-white;
+    }
+    .mdMenuConfig{
+        @apply relative bg-none translate-x-0;
+    }
+    .footer-area{
+        grid-template-areas: 
+        "form"
+        "nav"
+        "social-media"
+        "logo"
+        "copyright";
+    }
+    .footer-area-md{
+        grid-template-areas: 
+        "logo nav form"
+        "social-media nav copyright";
+    }
+}
