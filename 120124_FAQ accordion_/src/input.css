@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .wrapper{
+        @apply w-[90%];
+    }
+    .minusIcon{
+        background-image: url(../assets/images/icon-minus.svg);
+    }
+}
