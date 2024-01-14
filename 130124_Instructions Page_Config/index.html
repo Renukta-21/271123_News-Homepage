@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/ruta-output.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/71b9da0319.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="overflow-hidden relative">
+    <div class="back-layer absolute bg-negro-opaco inset-0 z-20 grid items-center justify-center hidden">
+        <div class="w-full">
+            <img src="" alt="" class="back-layer-container">
+            <div class="inset-x-0 text-center mt-4">
+                <button class="slider-prev rotate-180 bg-white px-6 py-4 rounded-full ">&#10148;</button>
+                <button class="slider-next bg-white px-6 py-4 rounded-full">&#10148;</button>
+            </div>
+
+        </div>
+    </div>
+    <header>
+        <img src="assets/img-banners/Banner_IIS.png" alt="" class="w-full">
+    </header>
+    <nav class="w-full bg-black text-white flex justify-between py-4 md:p-0 md:h-16">
+        <div class="wrapper flex justify-between relative">
+            <h2 class="md:hidden">Lumen</h2>
+            <input type="checkbox" name="" id="menuToggle" class="peer hidden">
+            <label for="menuToggle" class="menuToggle z-30 w-8 h-8 bg-iconOpen cursor-pointer md:hidden"><i class="fa-solid fa-bars"></i></label>
+            <div class="fixed inset-0 bg-negro-opaco translate-x-full peer-checked:translate-x-0 transition-all md:translate-x-0 md:static w-full md:justify-around md:h-full">
+                <ul class="grid items-center justify-center mt-28 bg-black text-center gap-4 text-xl md:m-0 md:flex md:justify-around md:h-full">
+                <li class="flex items-center cursor-pointer px-4 h-full hover:text-black hover:bg-white mx-auto">Impresora Fija</li>
+                <li class="flex items-center cursor-pointer px-4 h-full hover:text-black hover:bg-white mx-auto">Impresora Movil</li>
+                <li class="flex items-center cursor-pointer px-4 h-full hover:text-black hover:bg-white mx-auto">Ruta</li>
+                <li class="flex items-center cursor-pointer px-4 h-full hover:text-black hover:bg-white mx-auto">IIS</li>
+            </ul>
+            </div>
+            
+        </div>
+
+
+    </nav>
+    <main class="min-h-screen w-full ">
+        <p class="wrapper text-center my-8">Este manual ha sido cuidadosamente elaborado con el propósito de proporcionar una guía detallada para la instalación de la aplicación de ruta de Lumen.</p>
+        <h1 class="w-full text-center mt-2 text-2xl font-bold">Instalacion aplicacion Ruta Lumen</h1>
+        <article class="wrapper step step-1 h-max bg-red-600 mt-4 md:max-w-5xl">
+            <img src="assets/img-ruta/IIS_1.png" alt="" class="w-full cursor-pointer">
+        </article>
+    </main>
+</body>
+
+</html>
